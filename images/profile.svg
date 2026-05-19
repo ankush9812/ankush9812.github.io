@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="100%" height="100%" fill="#e6eef8"/>
+  <g transform="translate(400,300)">
+    <circle cx="0" cy="0" r="140" fill="#c6d9f7"/>
+    <circle cx="0" cy="-10" r="100" fill="#ffffff"/>
+  </g>
+  <g transform="translate(400,560)">
+    <rect x="-180" y="-60" width="360" height="120" rx="20" fill="#d9e9fb"/>
+    <text x="0" y="18" font-family="Inter, Arial, sans-serif" font-size="48" fill="#2b4a72" text-anchor="middle">AA</text>
+  </g>
+</svg>
