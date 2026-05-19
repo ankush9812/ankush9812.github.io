@@ -312,23 +312,23 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
-    opacity: 0;
-}
-
-.profile-frame.has-image .profile-photo {
     opacity: 1;
 }
 
 .profile-fallback {
-    display: grid;
+    display: none;
     place-items: center;
     gap: 14px;
     padding: 28px;
     text-align: center;
 }
 
-.profile-frame.has-image .profile-fallback {
-    display: none;
+.profile-frame.error .profile-photo {
+    opacity: 0;
+}
+
+.profile-frame.error .profile-fallback {
+    display: grid;
 }
 
 .profile-monogram {

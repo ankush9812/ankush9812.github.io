@@ -14,14 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (profileFrame && profilePhoto) {
         profilePhoto.addEventListener("load", () => {
             profileFrame.classList.add("has-image");
+            profileFrame.classList.remove("error");
         });
 
         profilePhoto.addEventListener("error", () => {
             profileFrame.classList.remove("has-image");
+            profileFrame.classList.add("error");
         });
 
         if (profilePhoto.complete && profilePhoto.naturalWidth > 0) {
             profileFrame.classList.add("has-image");
+            profileFrame.classList.remove("error");
         }
     }
 
