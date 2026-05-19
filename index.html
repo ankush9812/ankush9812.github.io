@@ -3,417 +3,425 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankush Agarwal - Research Homepage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ankush Agarwal | Researcher in NLP, LLMs, and Knowledge Graphs</title>
+    <meta
+        name="description"
+        content="Ankush Agarwal is a researcher at Fujitsu Research India working on NLP, large language models, knowledge graphs, question answering, and multimodal document understanding."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Ankush Agarwal</a>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#top" class="brand">Ankush Agarwal</a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#publications" class="nav-link">Publications</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#honors" class="nav-link">Honors</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
             </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#research" class="nav-link">Research</a>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="typing-text">Hi, I'm Ankush Agarwal</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        AI Researcher at <span class="highlight">Fujitsu Research India</span><br>
-                        Masters from <span class="highlight">IIT Bombay</span> | Specializing in <span class="highlight">Machine Learning</span>, <span class="highlight">NLP</span>, and <span class="highlight">Knowledge Graphs</span>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow">Researcher at Fujitsu Research India</p>
+                    <h1>Ankush Agarwal</h1>
+                    <p class="hero-lead">
+                        I work on knowledge-intensive NLP, large language models, question answering,
+                        and multimodal reasoning. My recent work focuses on making LLM systems more
+                        effective over structured knowledge, enterprise workflows, and complex documents.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#research" class="btn btn-primary">
-                            <i class="fas fa-microscope"></i>
-                            View Research
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i>
-                            Get in Touch
-                        </a>
+                    <div class="hero-highlights">
+                        <span>ACL, NAACL, and EMNLP publications</span>
+                        <span>MS by Research, IIT Bombay</span>
+                        <span>Bengaluru, India</span>
                     </div>
-                    <div class="social-links">
-                        <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" class="social-link">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ankush-agarwal" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/ankush9812" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:ankush98.12@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
+                    <div class="hero-actions">
+                        <a href="#publications" class="btn btn-primary">View Publications</a>
+                        <a href="Ankush_Agarwal_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">CV</a>
+                        <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Google Scholar</a>
+                        <a href="https://in.linkedin.com/in/ankush-agarwal-89315670" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <div class="profile-image">
-                            <img src="https://media.licdn.com/dms/image/D5603AQH-0ss6umMhZw/profile-displayphoto-shrink_800_800/0/1683306272482?e=2147483647&v=beta&t=PsbDX7AJytUeHu5dldWkSzniCKLTcAQN5TzRDjRYWtw" alt="Ankush Agarwal" id="profile-img">
-                        </div>
-                        <div class="floating-elements">
-                            <div class="floating-icon" style="--delay: 0s">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 1s">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 2s">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                        </div>
+                <aside class="hero-panel">
+                    <div class="profile-frame">
+                        <img
+                            src="https://media.licdn.com/dms/image/D5603AQH-0ss6umMhZw/profile-displayphoto-shrink_800_800/0/1683306272482?e=2147483647&v=beta&t=PsbDX7AJytUeHu5dldWkSzniCKLTcAQN5TzRDjRYWtw"
+                            alt="Portrait of Ankush Agarwal"
+                        >
                     </div>
-                </div>
+                    <dl class="profile-details">
+                        <div>
+                            <dt>Current role</dt>
+                            <dd>Researcher, Fujitsu Research India</dd>
+                        </div>
+                        <div>
+                            <dt>Research areas</dt>
+                            <dd>NLP, LLMs, Knowledge Graphs, QA</dd>
+                        </div>
+                        <div>
+                            <dt>Education</dt>
+                            <dd>MS by Research, IIT Bombay</dd>
+                        </div>
+                        <div>
+                            <dt>Contact</dt>
+                            <dd><a href="mailto:ankush98.12@gmail.com">ankush98.12@gmail.com</a></dd>
+                        </div>
+                    </dl>
+                </aside>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate researcher exploring the intersection of AI and knowledge representation</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am an AI Researcher at Fujitsu Research India, where I work on cutting-edge machine learning and NLP solutions. 
-                        I completed my Masters from the Indian Institute of Technology Bombay under the guidance of 
-                        <a href="https://scholar.google.com/citations?user=vvg-pAkAAAAJ&hl=en" target="_blank">Prof. Pushpak Bhattacharyya</a>. 
-                        My research focuses on advancing the field of Natural Language Processing through innovative approaches 
-                        to knowledge integration and question answering systems.
+        <section id="about" class="section section-muted">
+            <div class="container section-grid">
+                <div>
+                    <p class="section-kicker">About</p>
+                    <h2>Research profile</h2>
+                    <p class="section-text">
+                        I am a researcher at Fujitsu Research India, where I work on applied and
+                        foundational problems in language understanding. My work sits at the
+                        intersection of language models and structured knowledge, with an emphasis
+                        on question answering, retrieval and reasoning over tables and text, enterprise
+                        agent evaluation, and fine-grained multimodal document understanding.
                     </p>
-                    <p>
-                        My work primarily revolves around developing novel methods for integrating structured knowledge 
-                        into language models, with applications in question answering, knowledge graphs, and multi-modal reasoning. 
-                        I am particularly interested in bridging the gap between symbolic knowledge representation and 
-                        neural language understanding.
+                    <p class="section-text">
+                        I completed my MS by Research at the Indian Institute of Technology Bombay
+                        under the guidance of
+                        <a href="https://scholar.google.com/citations?user=vvg-pAkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Pushpak Bhattacharyya</a>.
+                        My academic and industry work shares a common theme: bringing reliable structure,
+                        retrieval, and reasoning into LLM-based systems.
                     </p>
-                    <div class="research-interests">
-                        <h3>Research Interests</h3>
-                        <div class="interests-grid">
-                            <div class="interest-item">
-                                <i class="fas fa-brain"></i>
-                                <span>Machine Learning</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-language"></i>
-                                <span>Natural Language Processing</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-project-diagram"></i>
-                                <span>Knowledge Graphs</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-question-circle"></i>
-                                <span>Question Answering</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-robot"></i>
-                                <span>Large Language Models</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-table"></i>
-                                <span>Table-Text Reasoning</span>
+                </div>
+                <div class="fact-grid">
+                    <article class="fact-card">
+                        <h3>Current focus</h3>
+                        <p>Knowledge-augmented LLM systems for enterprise and real-world reasoning tasks.</p>
+                    </article>
+                    <article class="fact-card">
+                        <h3>Recent venues</h3>
+                        <p>ACL 2024, NAACL 2025, ACL 2025, and EMNLP 2025.</p>
+                    </article>
+                    <article class="fact-card">
+                        <h3>Graduate work</h3>
+                        <p>MS by Research at IIT Bombay, CPI 8.79, advised by Prof. Pushpak Bhattacharyya.</p>
+                    </article>
+                    <article class="fact-card">
+                        <h3>Exam highlight</h3>
+                        <p>GATE 2020 score: 818, with 99.83 percentile.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="container">
+                <p class="section-kicker">Research</p>
+                <h2>Core areas</h2>
+                <div class="research-grid">
+                    <article class="research-card">
+                        <h3>Knowledge-infused language models</h3>
+                        <p>
+                            Methods for injecting structured and domain-specific knowledge into language
+                            models so they reason more accurately and with lower context overhead.
+                        </p>
+                    </article>
+                    <article class="research-card">
+                        <h3>Question answering over mixed sources</h3>
+                        <p>
+                            Systems that combine text, tables, and knowledge graphs to answer questions
+                            that require aggregation, retrieval, and multi-hop reasoning.
+                        </p>
+                    </article>
+                    <article class="research-card">
+                        <h3>Multimodal document understanding</h3>
+                        <p>
+                            Benchmarks and modeling approaches for finding fine-grained evidence in
+                            complex visual documents where localization and reasoning both matter.
+                        </p>
+                    </article>
+                    <article class="research-card">
+                        <h3>Enterprise LLM evaluation</h3>
+                        <p>
+                            Evaluation environments for measuring how well LLM agents operate across
+                            fragmented data, access control boundaries, and real enterprise workflows.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section section-muted">
+            <div class="container">
+                <div class="section-headline">
+                    <div>
+                        <p class="section-kicker">Publications</p>
+                        <h2>Selected papers</h2>
+                    </div>
+                    <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-link">Full publication list</a>
+                </div>
+
+                <div class="publication-list">
+                    <article class="publication-item">
+                        <div class="publication-year">2026</div>
+                        <div class="publication-body">
+                            <h3>EnterpriseLab: A Full-Stack Platform for developing and deploying agents in Enterprises</h3>
+                            <p class="publication-authors">Ankush Agarwal, Harsh Vishwakarma, Suraj Nagaje, Chaitanya Devaguptapu</p>
+                            <p class="publication-venue">arXiv preprint, March 23, 2026</p>
+                            <p class="publication-summary">
+                                Introduces a closed-loop platform for enterprise agent development that unifies tool integration, trajectory synthesis, training, and continuous evaluation.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/abs/2603.21630" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://arxiv.org/pdf/2603.21630" target="_blank" rel="noopener noreferrer">PDF</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="59">0</div>
-                        <div class="stat-label">Citations</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="4">0</div>
-                        <div class="stat-label">h-index</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="6">0</div>
-                        <div class="stat-label">Publications</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="4">0</div>
-                        <div class="stat-label">i10-index</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- Research Section -->
-    <section id="research" class="research">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Research Areas</h2>
-                <p class="section-subtitle">Exploring cutting-edge problems in AI and NLP</p>
+                    <article class="publication-item">
+                        <div class="publication-year">2025</div>
+                        <div class="publication-body">
+                            <h3>Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments</h3>
+                            <p class="publication-authors">Harsh Vishwakarma, Ankush Agarwal, Ojas Patil, Chaitanya Devaguptapu, Mahesh Chandran</p>
+                            <p class="publication-venue">EMNLP 2025, Suzhou, China</p>
+                            <p class="publication-summary">
+                                Introduces EnterpriseBench, a 500-task benchmark for evaluating LLM agents in realistic enterprise settings with fragmented data and access controls.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://aclanthology.org/2025.emnlp-main.466/" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://aclanthology.org/2025.emnlp-main.466.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="publication-year">2025</div>
+                        <div class="publication-body">
+                            <h3>Finding Needles in Images: Can Multi-modal LLMs Locate Fine Details?</h3>
+                            <p class="publication-authors">Parth Thakkar, Ankush Agarwal, Prasad Kasu, Pulkit Bansal, Chaitanya Devaguptapu</p>
+                            <p class="publication-venue">ACL 2025, Vienna, Austria</p>
+                            <p class="publication-summary">
+                                Presents NiM-Benchmark and Spot-IT for evaluating and improving fine-grained detail localization in complex visual documents.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://aclanthology.org/2025.acl-long.1152/" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://aclanthology.org/2025.acl-long.1152.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="publication-year">2025</div>
+                        <div class="publication-body">
+                            <h3>Hybrid Graphs for Table-and-Text based Question Answering using LLMs</h3>
+                            <p class="publication-authors">Ankush Agarwal, Chaitanya Devaguptapu, Ganesh S</p>
+                            <p class="publication-venue">NAACL 2025, Albuquerque, New Mexico</p>
+                            <p class="publication-summary">
+                                Proposes a hybrid graph representation for question answering over mixed table-text sources, improving zero-shot results while reducing token usage.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://aclanthology.org/2025.naacl-long.39/" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://aclanthology.org/2025.naacl-long.39.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-body">
+                            <h3>HOLMES: Hyper-Relational Knowledge Graphs for Multi-hop Question Answering using LLMs</h3>
+                            <p class="publication-authors">Pranoy Panda, Ankush Agarwal, Chaitanya Devaguptapu, Manohar Kaul, Prathosh A P</p>
+                            <p class="publication-venue">ACL 2024, Bangkok, Thailand</p>
+                            <p class="publication-summary">
+                                Builds distilled, query-aware knowledge graphs for multi-hop QA, improving answer quality while using substantially fewer tokens.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://aclanthology.org/2024.acl-long.717/" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://aclanthology.org/2024.acl-long.717.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="publication-year">2023</div>
+                        <div class="publication-body">
+                            <h3>KITLM: Domain-Specific Knowledge InTegration into Language Models for Question Answering</h3>
+                            <p class="publication-authors">Ankush Agarwal, Sakharam Gawade, Amar Prakash Azad, Pushpak Bhattacharyya</p>
+                            <p class="publication-venue">ICON 2023</p>
+                            <p class="publication-summary">
+                                Studies domain-specific knowledge infusion for question answering and shows gains over larger generic models in specialized settings.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://aclanthology.org/2023.icon-1.20/" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://aclanthology.org/2023.icon-1.20.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="publication-year">2022</div>
+                        <div class="publication-body">
+                            <h3>Knowledge Graph - Deep Learning: A Case Study in Question Answering in Aviation Safety Domain</h3>
+                            <p class="publication-authors">Ankush Agarwal, Raj Gite, Shreya Laddha, Pushpak Bhattacharyya, Satyanarayan Kar, Asif Ekbal, Prabhjit Thind, Rajesh Zele, Ravi Shankar</p>
+                            <p class="publication-venue">LREC 2022</p>
+                            <p class="publication-summary">
+                                Presents a knowledge graph guided QA system for aviation safety, grounded in accident reports and regulatory documents.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://aclanthology.org/2022.lrec-1.673/" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://aclanthology.org/2022.lrec-1.673.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="publication-year">2022</div>
+                        <div class="publication-body">
+                            <h3>There is No Big Brother or Small Brother: Knowledge Infusion in Language Models for Link Prediction and Question Answering</h3>
+                            <p class="publication-authors">Ankush Agarwal, Sakharam Gawade, Sachin Channabasavarajendra, Pushpak Bhattacharyya</p>
+                            <p class="publication-venue">ICON 2022</p>
+                            <p class="publication-summary">
+                                Explores knowledge infusion for both link prediction and question answering, connecting symbolic structure with language model behavior.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://aclanthology.org/2022.icon-main.26/" target="_blank" rel="noopener noreferrer">Paper</a>
+                                <a href="https://aclanthology.org/2022.icon-main.26.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Knowledge Graph Integration</h3>
-                    <p>
-                        Developing novel approaches to integrate structured knowledge graphs with neural language models 
-                        for enhanced reasoning and question answering capabilities.
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <p class="section-kicker">Experience</p>
+                <h2>Resume highlights</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="timeline-period">2023 - Present</span>
+                            <span class="timeline-place">Bengaluru, India</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Researcher, Fujitsu Research India</h3>
+                            <p>
+                                Working on applied AI research spanning knowledge-graph-enhanced LLMs,
+                                question answering, enterprise agent evaluation, and multimodal document reasoning.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="timeline-period">2021 - 2023</span>
+                            <span class="timeline-place">Mumbai, India</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>MS by Research, Indian Institute of Technology Bombay</h3>
+                            <p>
+                                Completed graduate research under Prof. Pushpak Bhattacharyya.
+                                CPI: 8.79. Program transition from MTech to MS by Research noted in LinkedIn profile.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="honors" class="section section-muted">
+            <div class="container">
+                <p class="section-kicker">Honors</p>
+                <h2>Recent recognition</h2>
+                <div class="honors-grid">
+                    <article class="honor-card">
+                        <span class="honor-date">Nov 2025</span>
+                        <h3>FRIPL Award</h3>
+                        <p>Awarded for development of Needles in Images technology.</p>
+                    </article>
+                    <article class="honor-card">
+                        <span class="honor-date">Aug 2025</span>
+                        <h3>Best Resource Paper Nomination</h3>
+                        <p>EMNLP 2025 nomination for work on enterprise LLM evaluation.</p>
+                    </article>
+                    <article class="honor-card">
+                        <span class="honor-date">Jul 2025</span>
+                        <h3>SAC Highlights Award</h3>
+                        <p>ACL 2025 recognition for a top 1% submission.</p>
+                    </article>
+                    <article class="honor-card">
+                        <span class="honor-date">Mar 2025</span>
+                        <h3>FRIPL Grand Award</h3>
+                        <p>Recognized for development of KG-RAG technology.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-layout">
+                <div>
+                    <p class="section-kicker">Contact</p>
+                    <h2>Get in touch</h2>
+                    <p class="section-text">
+                        For research discussions, interviews, collaboration, or speaking opportunities,
+                        the fastest way to reach me is by email or LinkedIn.
                     </p>
-                    <div class="research-tags">
-                        <span class="tag">Knowledge Graphs</span>
-                        <span class="tag">Neural Networks</span>
-                        <span class="tag">Reasoning</span>
-                    </div>
                 </div>
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-question-circle"></i>
-                    </div>
-                    <h3>Multi-hop Question Answering</h3>
-                    <p>
-                        Creating systems that can perform complex reasoning across multiple information sources 
-                        to answer sophisticated questions requiring multi-step inference.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag">QA Systems</span>
-                        <span class="tag">Multi-hop Reasoning</span>
-                        <span class="tag">LLMs</span>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-table"></i>
-                    </div>
-                    <h3>Table-Text Reasoning</h3>
-                    <p>
-                        Advancing hybrid reasoning systems that can understand and reason over both structured 
-                        tabular data and unstructured textual information simultaneously.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag">Hybrid Graphs</span>
-                        <span class="tag">Structured Data</span>
-                        <span class="tag">Multi-modal</span>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Knowledge Infusion in LMs</h3>
-                    <p>
-                        Researching methods to effectively incorporate domain-specific knowledge into language models 
-                        for improved performance on specialized tasks and domains.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag">Language Models</span>
-                        <span class="tag">Domain Knowledge</span>
-                        <span class="tag">Transfer Learning</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Publications</h2>
-                <p class="section-subtitle">Recent contributions to the field</p>
-            </div>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-year">2025</div>
-                    <div class="publication-content">
-                        <h3>Hybrid Graphs for Table-and-Text based Question Answering using LLMs</h3>
-                        <p class="authors">A Agarwal, C Devaguptapu</p>
-                        <p class="venue">North American Chapter of the Association for Computational Linguistics (NAACL) 2025</p>
-                        <div class="publication-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 2 citations</span>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/2025.naacl-long.39/" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Scholar</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="publication-item">
-                    <div class="publication-year">2024</div>
-                    <div class="publication-content">
-                        <h3>HOLMES: Hyper-relational knowledge graphs for multi-hop question answering using LLMs</h3>
-                        <p class="authors">P Panda, A Agarwal, C Devaguptapu, M Kaul</p>
-                        <p class="venue">Association for Computational Linguistics (ACL) 2024</p>
-                        <div class="publication-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 15 citations</span>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/2024.acl-long.717/" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Scholar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-year">2023</div>
-                    <div class="publication-content">
-                        <h3>KITLM: Domain-Specific Knowledge InTegration into Language Models for Question Answering</h3>
-                        <p class="authors">A Agarwal, S Gawade, AP Azad, P Bhattacharyya</p>
-                        <p class="venue">ICON 20 (Association for Computational Linguistic)</p>
-                        <div class="publication-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 10 citations</span>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/2023.icon-1.20/" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Scholar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-year">2022</div>
-                    <div class="publication-content">
-                        <h3>Knowledge Graph - Deep Learning: A Case Study in Question Answering in Aviation Safety Domain</h3>
-                        <p class="authors">A Agarwal, R Gite, S Laddha, P Bhattacharyya, S Kar, A Ekbal, P Thind, ...</p>
-                        <p class="venue">Language Resources and Evaluation Conference (LREC) 2022</p>
-                        <div class="publication-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 21 citations</span>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/2022.lrec-1.673/" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Scholar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-year">2022</div>
-                    <div class="publication-content">
-                        <h3>There is No Big Brother or Small Brother: Knowledge Infusion in Language Models for Link Prediction and Question Answering</h3>
-                        <p class="authors">A Agarwal, S Gawade, S Channabasavarajendra, P Bhattacharyya</p>
-                        <p class="venue">ICON 19 (Association for Computational Linguistic)</p>
-                        <div class="publication-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 11 citations</span>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/2022.icon-main.26/" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Scholar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="view-more">
-                <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-external-link-alt"></i>
-                    View All Publications
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss research opportunities and collaborations</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>ankush98.12@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>Fujitsu Research India, Bangalore</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Google Scholar</h3>
-                            <p>View my research profile</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Ankush Agarwal. All rights reserved.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank">
+                <div class="contact-list">
+                    <a href="Ankush_Agarwal_CV.pdf" target="_blank" rel="noopener noreferrer" class="contact-row">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Curriculum Vitae</span>
+                    </a>
+                    <a href="mailto:ankush98.12@gmail.com" class="contact-row">
+                        <i class="fas fa-envelope"></i>
+                        <span>ankush98.12@gmail.com</span>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="contact-row">
                         <i class="fas fa-graduation-cap"></i>
+                        <span>Google Scholar</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/ankush-agarwal" target="_blank">
+                    <a href="https://in.linkedin.com/in/ankush-agarwal-89315670" target="_blank" rel="noopener noreferrer" class="contact-row">
                         <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/ankush9812" target="_blank">
+                    <a href="https://github.com/ankush9812" target="_blank" rel="noopener noreferrer" class="contact-row">
                         <i class="fab fa-github"></i>
+                        <span>GitHub</span>
                     </a>
                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="current-year"></span> Ankush Agarwal</p>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://in.linkedin.com/in/ankush-agarwal-89315670" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ankush9812" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </footer>
