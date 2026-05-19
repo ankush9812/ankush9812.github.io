@@ -1,18 +1,18 @@
 :root {
     --bg: #ffffff;
-    --bg-muted: #f5f7fa;
+    --bg-muted: #f7f9fc;
     --surface: #ffffff;
     --surface-strong: #f8fafc;
     --text: #0f172a;
     --text-soft: #475569;
     --text-muted: #64748b;
     --border: #dbe3ee;
-    --accent: #0f766e;
-    --accent-strong: #155e75;
-    --accent-soft: #ecfeff;
-    --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
-    --radius: 16px;
-    --radius-sm: 12px;
+    --accent: #2563eb;
+    --accent-strong: #1e40af;
+    --accent-soft: #eff6ff;
+    --shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+    --radius: 8px;
+    --radius-sm: 8px;
     --nav-height: 76px;
 }
 
@@ -32,10 +32,20 @@ body {
     color: var(--text);
     font-family: "Inter", sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
     color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+span,
+dd {
+    overflow-wrap: anywhere;
 }
 
 img {
@@ -116,7 +126,7 @@ img {
 }
 
 .section {
-    padding: 88px 0;
+    padding: 76px 0;
 }
 
 .section-muted {
@@ -124,17 +134,16 @@ img {
 }
 
 .hero {
-    padding: 72px 0 56px;
-    background:
-        linear-gradient(180deg, rgba(236, 254, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%),
-        var(--bg);
+    padding: 68px 0 64px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
 }
 
 .hero-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    grid-template-columns: minmax(0, 1fr) 310px;
     gap: 48px;
-    align-items: center;
+    align-items: start;
 }
 
 .eyebrow,
@@ -149,7 +158,7 @@ img {
 
 .hero h1,
 .section h2 {
-    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-size: clamp(2.4rem, 4vw, 3.35rem);
     line-height: 1.08;
     margin-bottom: 18px;
 }
@@ -179,7 +188,7 @@ img {
 .hero-highlights span {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 999px;
+    border-radius: 8px;
     padding: 8px 14px;
     color: var(--text-soft);
     font-size: 0.95rem;
@@ -192,13 +201,42 @@ img {
     margin-top: 28px;
 }
 
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 28px;
+    max-width: 620px;
+}
+
+.hero-stats div {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-strong);
+    padding: 14px;
+}
+
+.hero-stats strong {
+    display: block;
+    color: var(--accent-strong);
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.hero-stats span {
+    color: var(--text-soft);
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 46px;
     padding: 0 18px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
@@ -233,22 +271,29 @@ img {
 .hero-panel {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 24px;
+    border-radius: 10px;
     box-shadow: var(--shadow);
-    overflow: hidden;
+    padding: 22px;
+    text-align: center;
 }
 
 .profile-frame {
+    width: 220px;
     aspect-ratio: 1 / 1;
-    background: linear-gradient(180deg, #dff8f6 0%, #eff6ff 100%);
+    margin: 0 auto;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    border: 4px solid #ffffff;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
 }
 
 .profile-details {
-    padding: 24px;
+    padding: 22px 0 0;
     display: grid;
-    gap: 18px;
+    gap: 14px;
+    text-align: left;
 }
 
 .profile-photo,
@@ -262,6 +307,11 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
+    opacity: 0;
+}
+
+.profile-frame.has-image .profile-photo {
+    opacity: 1;
 }
 
 .profile-fallback {
@@ -277,17 +327,17 @@ img {
 }
 
 .profile-monogram {
-    width: min(160px, 42vw);
+    width: min(126px, 42vw);
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    background: linear-gradient(135deg, #155e75 0%, #0f766e 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
     color: #ffffff;
     display: grid;
     place-items: center;
     font-size: clamp(2.2rem, 6vw, 3rem);
     font-weight: 800;
     letter-spacing: 0;
-    box-shadow: 0 18px 40px rgba(21, 94, 117, 0.2);
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.2);
 }
 
 .profile-frame-label {
@@ -330,7 +380,7 @@ img {
 }
 
 .fact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
 }
 
 .fact-card,
@@ -417,7 +467,7 @@ img {
 
 .publication-list {
     display: grid;
-    gap: 18px;
+    gap: 14px;
 }
 
 .publication-item {
@@ -427,7 +477,12 @@ img {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 22px 24px;
+}
+
+.publication-item:hover {
+    border-color: #bfdbfe;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
 }
 
 .publication-year {
@@ -598,6 +653,10 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .hero-panel {
+        max-width: 360px;
+    }
+
     .fact-grid,
     .research-grid,
     .honors-grid,
@@ -655,8 +714,8 @@ img {
 
     .section,
     .hero {
-        padding-top: 72px;
-        padding-bottom: 72px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .hero-actions,
@@ -666,9 +725,18 @@ img {
         flex-direction: column;
     }
 
+    .hero-actions .btn {
+        width: fit-content;
+    }
+
     .hero-highlights span {
         width: 100%;
         border-radius: 12px;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
     }
 }
 
@@ -683,11 +751,32 @@ img {
         overflow-wrap: break-word;
     }
 
+    .hero-lead,
+    .section-text {
+        font-size: 1rem;
+    }
+
     .profile-details,
     .publication-item,
     .fact-card,
     .research-card,
     .honor-card {
         padding: 18px;
+    }
+
+    .hero-panel {
+        padding: 18px;
+    }
+
+    .hero-panel .profile-details {
+        padding: 18px 0 0;
+    }
+
+    .profile-frame {
+        width: 184px;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr 1fr;
     }
 }
