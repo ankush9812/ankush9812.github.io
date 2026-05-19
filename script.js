@@ -3,13 +3,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const navMenu = document.querySelector(".nav-menu");
     const navLinks = Array.from(document.querySelectorAll(".nav-link"));
     const sections = Array.from(document.querySelectorAll("main section[id]"));
-    const animated = document.querySelectorAll(
-        ".fact-card, .research-card, .publication-item, .timeline-item, .honor-card, .contact-row"
-    );
     const yearNode = document.getElementById("current-year");
+    const profileFrame = document.querySelector(".profile-frame");
+    const profilePhoto = document.getElementById("profile-photo");
 
     if (yearNode) {
         yearNode.textContent = String(new Date().getFullYear());
+    }
+
+    if (profileFrame && profilePhoto) {
+        profilePhoto.addEventListener("load", () => {
+            profileFrame.classList.add("has-image");
+        });
+
+        profilePhoto.addEventListener("error", () => {
+            profileFrame.classList.remove("has-image");
+        });
+
+        if (profilePhoto.complete && profilePhoto.naturalWidth > 0) {
+            profileFrame.classList.add("has-image");
+        }
     }
 
     if (navToggle && navMenu) {
@@ -43,26 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.toggle("active", isActive);
         });
     };
-
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.12,
-            rootMargin: "0px 0px -40px 0px"
-        }
-    );
-
-    animated.forEach((node) => {
-        node.classList.add("fade-in");
-        observer.observe(node);
-    });
 
     window.addEventListener("scroll", activateLink, { passive: true });
     activateLink();
