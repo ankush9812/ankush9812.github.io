@@ -146,6 +146,11 @@ img {
     align-items: start;
 }
 
+.hero-copy,
+.hero-panel {
+    min-width: 0;
+}
+
 .eyebrow,
 .section-kicker {
     color: var(--accent-strong);
@@ -495,6 +500,11 @@ img {
     margin-bottom: 6px;
 }
 
+.author-marker {
+    color: var(--accent-strong);
+    font-weight: 800;
+}
+
 .publication-venue {
     margin-bottom: 10px;
     font-weight: 600;
@@ -518,6 +528,12 @@ img {
 
 .publication-links a:hover {
     text-decoration: underline;
+}
+
+.publication-note {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    margin-top: 16px;
 }
 
 .timeline {
@@ -675,8 +691,35 @@ img {
 }
 
 @media (max-width: 760px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .container {
-        width: min(100% - 32px, 1120px);
+        width: calc(100vw - 24px);
+        max-width: calc(100vw - 24px);
+    }
+
+    .hero-layout,
+    .section-grid,
+    .contact-layout,
+    .timeline-item {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-copy,
+    .hero-lead,
+    .section-text,
+    .hero-highlights,
+    .hero-actions,
+    .hero-stats {
+        width: 100%;
+        max-width: 100%;
     }
 
     .nav-toggle {
@@ -718,15 +761,22 @@ img {
         padding-bottom: 64px;
     }
 
-    .hero-actions,
     .section-headline,
     .footer-content {
         align-items: start;
         flex-direction: column;
     }
 
+    .hero-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        max-width: 100%;
+    }
+
     .hero-actions .btn {
-        width: fit-content;
+        width: 100%;
+        padding-inline: 10px;
     }
 
     .hero-highlights span {
@@ -737,6 +787,10 @@ img {
     .hero-stats {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         width: 100%;
+    }
+
+    .hero-panel {
+        margin-top: 48px;
     }
 }
 
